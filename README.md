@@ -1,7 +1,16 @@
 
 # Website Information Extraction
 
-This project automates the extraction of information from websites using Selenium and stores it in a MySQL database.
+This project automates the extraction of information from websites using Selenium ,BeautifulSoup and stores it in a MySQL database.
+
+To run this project, you'll need Python 3 installed on your system. It's recommended to use a virtual environment to manage dependencies. You can create a virtual environment using `venv` (for Python 3.3 and above) or `virtualenv`:
+
+## Using venv (Python 3.3+)
+
+```sh
+python3 -m venv myenv
+source myenv/bin/activate
+```
 
 ## Setup
 
@@ -9,6 +18,10 @@ This project automates the extraction of information from websites using Seleniu
 
 ```bash
 git clone https://github.com/shubhamgupta0903/Web_Scraper
+```
+
+```bash
+cd Web_Scraper
 ```
 
 ### 2. Install the required Python packages
@@ -23,11 +36,15 @@ pip3 install -r requirements.txt
 
 ### 3. Database Setup
 
+Note: 
+Make sure you have MySQL installed on your machine.
+Replace root with the database username
+
 ```bash
-mysql -u root -p < sql/create_table.sql
+mysql -u root -p < sql/create_table.sql 
 ```
 
-Note: Make sure you have MySQL installed on your machine.
+Note: 
 
 ### 4. Database Connection
 
@@ -49,7 +66,7 @@ Users should download the ChromeDriver executable compatible with their operatin
 
 Extract the ChromeDriver and copy the path to the chromedriver executable.
 
-Update the path to the chromedriver executable in `main.py`
+Update the path to the chromedriver executable in `selenium_setup.py`
 
 ```python
 service = Service('/path/to/chromedriver')
