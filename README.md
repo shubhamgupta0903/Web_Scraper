@@ -82,6 +82,13 @@ or
 python3 main.py
 ```
 
+### 7. Print Table
+To print the table run this code in sql workbench
+
+```sql
+SELECT * FROM internship_project.website_info;
+```
+
 ## Note:
 
 - Ensure that your MySQL server is running before executing the code.
