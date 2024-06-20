@@ -1,6 +1,4 @@
-Creating a README file in Markdown format for your project:
 
-```markdown
 # Website Information Extraction
 
 This project automates the extraction of information from websites using Selenium and stores it in a MySQL database.
@@ -71,4 +69,4 @@ python3 main.py
 
 - Ensure that your MySQL server is running before executing the code.
 - Make sure to review and comply with the website's terms of service and legal requirements when extracting information.
-```
+
