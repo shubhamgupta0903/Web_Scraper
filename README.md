@@ -37,8 +37,8 @@ pip3 install -r requirements.txt
 ### 3. Database Setup
 
 Note: 
-Make sure you have MySQL installed on your machine.
-Replace root with the database username
+- Make sure you have MySQL installed on your machine.
+- Replace 'root' with the database username
 
 ```bash
 mysql -u root -p < sql/create_table.sql 
